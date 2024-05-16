@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tA/EfyBH113B44Ph5zCtPfjb0J2lX7fMykyYzdOgwDGHpuWRWR7FGV+kzPV4mmVJkzl9vlFVXGsFY2e5Zrgi6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\react\\fullstack-rotion\\Api.RotionApp\\src\\Api.RotionApp.Domain\\Api.RotionApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RodolfoOliveira\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\RodolfoOliveira\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\RodolfoOliveira\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

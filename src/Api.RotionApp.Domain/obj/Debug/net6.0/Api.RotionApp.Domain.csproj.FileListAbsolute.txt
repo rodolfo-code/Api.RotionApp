@@ -1,0 +1,12 @@
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\bin\Debug\net6.0\Api.RotionApp.Domain.deps.json
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\bin\Debug\net6.0\Api.RotionApp.Domain.dll
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\bin\Debug\net6.0\Api.RotionApp.Domain.pdb
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\Api.RotionApp.Domain.csproj.AssemblyReference.cache
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\Api.RotionApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\Api.RotionApp.Domain.AssemblyInfoInputs.cache
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\Api.RotionApp.Domain.AssemblyInfo.cs
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\Api.RotionApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\Api.RotionApp.Domain.dll
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\refint\Api.RotionApp.Domain.dll
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\Api.RotionApp.Domain.pdb
+C:\Users\RodolfoOliveira\Desktop\Repos\react\fullstack-rotion\Api.RotionApp\src\Api.RotionApp.Domain\obj\Debug\net6.0\ref\Api.RotionApp.Domain.dll
