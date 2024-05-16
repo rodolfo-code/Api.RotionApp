@@ -1,17 +1,16 @@
 ﻿using Api.RotionApp.Domain.Exceptions;
+using Api.RotionApp.Domain.SeedWork;
 
 namespace Api.RotionApp.Domain.Entity;
-public class Project
+public class Project : AggregateRoot
 {
-    public Guid Id { get; private set; }
     public string Title { get; private set; }
     public string? Description { get; private set; }
     public string? Emoji { get; private set; }
     public DateTime CreatedAt { get; private set; }
 
-    public Project(string title, string? description, string? emoji)
+    public Project(string title, string? description, string? emoji) : base()
     {
-        Id = Guid.NewGuid();
         Title = title;
         Description = description;
         Emoji = emoji;
