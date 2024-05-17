@@ -1,5 +1,6 @@
 ﻿
 using Api.RotionApp.Domain.Exceptions;
+using FluentAssertions;
 using System;
 using Xunit;
 
@@ -26,15 +27,14 @@ public class ProjectTest
         var dateTimeAfter = DateTime.Now;
 
         // Assert
-        Assert.NotNull(project);
-        Assert.Equal(validData.Title, project.Title);
-        Assert.Equal(validData.Description, project.Description);
-        Assert.Equal(validData.Emoji, project.Emoji);
-        Assert.NotEqual(default(Guid), project.Id);
-        Assert.NotEqual(default(DateTime), project.CreatedAt);
-        Assert.True(project.CreatedAt > dateTimeBefore);
-        Assert.True(project.CreatedAt < dateTimeAfter);
-
+        project.Should().NotBeNull();
+        project.Title.Should().Be(validData.Title);
+        project.Description.Should().Be(validData.Description);
+        project.Emoji.Should().Be(validData.Emoji);
+        project.Id.Should().NotBeEmpty();
+        project.CreatedAt.Should().NotBeSameDateAs(default(DateTime));
+        (project.CreatedAt > dateTimeBefore).Should().BeTrue();
+        (project.CreatedAt < dateTimeAfter).Should().BeTrue();
     }
 
     [Theory(DisplayName = nameof(Instantiate_ErrorWhenTitleIsEmpty))]
@@ -45,7 +45,8 @@ public class ProjectTest
         Action action = () => new DomainEntity.Project(title!, "description", "emoji");
 
         var exception = Assert.Throws<EntityValidationException>(action);
-        Assert.Equal("Title should not be empty or null", exception.Message);
+
+        exception.Message.Should().Be("Title should not be empty or null");
     }
 
     [Fact(DisplayName = nameof(Instantiate_ErrorWhenDescriptionIsNull))]
@@ -55,7 +56,7 @@ public class ProjectTest
         Action action = () => new DomainEntity.Project("project title", null!, "emoji");
 
         var exception = Assert.Throws<EntityValidationException>(action);
-        Assert.Equal("Description should not be null", exception.Message);
+        exception.Message.Should().Be("Description should not be null");
     }
 
     [Fact(DisplayName = nameof(Instantiate_ErrorWhenDescriptionIsGreaterThan10_000Characters))]
@@ -67,7 +68,7 @@ public class ProjectTest
         Action action = () => new DomainEntity.Project("title", invalidDescription, "emoji");
         var exception = Assert.Throws<EntityValidationException>(action);
 
-        Assert.Equal("Description should not be greater than 10_000 characters long", exception.Message);
+        exception.Message.Should().Be("Description should not be greater than 10_000 characters long");
     }
 
     [Fact(DisplayName = nameof(Update))]
@@ -79,9 +80,9 @@ public class ProjectTest
 
         project.Update(newValues.Title, newValues.Description, newValues.Emoji);
 
-        Assert.Equal(newValues.Title, project.Title);
-        Assert.Equal(newValues.Description, project.Description);
-        Assert.Equal(newValues.Emoji, project.Emoji);
+        project.Title.Should().Be(newValues.Title);
+        project.Description.Should().Be(newValues.Description);
+        project.Emoji.Should().Be(newValues.Emoji);
     }
 
     [Fact(DisplayName = nameof(Update_OnlyTitle))]
@@ -97,6 +98,8 @@ public class ProjectTest
         var currentEmoji = project.Emoji;
 
         project.Update(newValues.Title);
+
+
 
         Assert.Equal(newValues.Title, project.Title);
         Assert.Equal(currentDescription, project.Description);
